@@ -1,0 +1,61 @@
+/* ==========================================================================
+   DESIGN TOKENS
+   Single source of truth. Change values here to re-theme the whole site.
+   ========================================================================== */
+
+:root {
+  /* --- Color: editorial black / off-white / neon-lime --- */
+  --c-black:        #0a0a0a;
+  --c-black-soft:   #131313;
+  --c-panel:        #16170f;   /* near-black with a lime undertone, for dark panels */
+  --c-offwhite:     #f4f3ee;
+  --c-paper:        #ebe9e1;
+  --c-lime:         #ccff00;
+  --c-lime-dim:     #a3cc00;
+  --c-gray-900:     #1c1c1a;
+  --c-gray-600:     #6f6f68;
+  --c-gray-600-onblack: #797972; /* WCAG AA-safe (4.5:1) variant of gray-600 for small text on black; original token stays reserved for the light "paper" section where it already passes AA */
+  --c-gray-400:     #9d9d95;
+  --c-gray-200:     #d8d7cf;
+  --c-line:         rgba(255,255,255,0.14);
+  --c-line-dark:    rgba(10,10,10,0.14);
+
+  /* --- Type families ---
+     Display: Big Shoulders — condensed industrial grotesk, does the shouting.
+     Body:    Inter — quiet, legible workhorse.
+     Label:   IBM Plex Mono — utility face for index numbers, eyebrows, meta. */
+  --f-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --f-body:    'Inter', -apple-system, sans-serif;
+  --f-label:   'IBM Plex Mono', ui-monospace, monospace;
+
+  /* --- Type scale (fluid) --- */
+  --fs-hero:   clamp(3.2rem, 9vw, 9rem);
+  --fs-h1:     clamp(2.4rem, 6vw, 5.5rem);
+  --fs-h2:     clamp(1.8rem, 4vw, 3.2rem);
+  --fs-h3:     clamp(1.3rem, 2.4vw, 1.9rem);
+  --fs-lead:   clamp(1.1rem, 1.6vw, 1.4rem);
+  --fs-body:   1rem;
+  --fs-small:  0.85rem;
+  --fs-label:  0.75rem;
+
+  /* --- Spacing scale --- */
+  --sp-1: 0.4rem;
+  --sp-2: 0.8rem;
+  --sp-3: 1.6rem;
+  --sp-4: 2.4rem;
+  --sp-5: 4rem;
+  --sp-6: 6.4rem;
+  --sp-7: 9.6rem;
+
+  /* --- Layout --- */
+  --page-margin: clamp(1.25rem, 4vw, 3.5rem);
+  --content-max: 1440px;
+  --radius-sm: 2px;
+  --radius-md: 6px;
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 200ms;
+  --dur-med:  500ms;
+  --dur-slow: 900ms;
+}

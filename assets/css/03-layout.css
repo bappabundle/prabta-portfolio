@@ -1,0 +1,66 @@
+/* ==========================================================================
+   LAYOUT PRIMITIVES
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--page-margin);
+}
+
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--sp-3);
+}
+
+.section {
+  position: relative;
+  padding-block: var(--sp-7);
+  border-top: 1px solid var(--c-line);
+}
+
+.section--tight { padding-block: var(--sp-5); }
+
+.section--paper {
+  background: var(--c-offwhite);
+  color: var(--c-black);
+  border-top: 1px solid var(--c-line-dark);
+}
+.section--paper .eyebrow { color: var(--c-lime-dim); }
+.section--paper .lede { color: var(--c-gray-900); }
+.section--paper .index-num { color: var(--c-gray-600); }
+
+.section-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: end;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-5);
+}
+
+.section-head__num {
+  font-family: var(--f-label);
+  font-size: var(--fs-small);
+  letter-spacing: 0.1em;
+}
+
+.rule {
+  border: none;
+  border-top: 1px solid var(--c-line);
+  margin: 0;
+}
+.section--paper .rule { border-top-color: var(--c-line-dark); }
+.section--paper .skill-group li,
+.section--paper .exp-row__role,
+.section--paper .about__headline,
+.section--paper h1, .section--paper h2, .section--paper h3, .section--paper h4 {
+  color: var(--c-gray-900);
+}
+.section--paper .skill-group h4 { color: var(--c-lime-dim); border-bottom-color: var(--c-line-dark); }
+.section--paper .tag { color: var(--c-gray-900); }
+
+@media (max-width: 860px) {
+  .section { padding-block: var(--sp-6); }
+}

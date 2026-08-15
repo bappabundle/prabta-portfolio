@@ -1,0 +1,296 @@
+/* ==========================================================================
+   COMPONENTS
+   ========================================================================== */
+
+/* --- Site header / nav --- */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-2) var(--page-margin);
+  background: rgba(10,10,10,0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
+}
+.site-header.is-scrolled {
+  border-bottom-color: var(--c-line);
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--f-label);
+  font-size: var(--fs-small);
+  letter-spacing: 0.08em;
+}
+
+.brand-mark__img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.brand-mark svg { width: 22px; height: 22px; }
+
+.main-nav ul {
+  display: flex;
+  gap: var(--sp-4);
+}
+.main-nav a {
+  font-family: var(--f-label);
+  font-size: var(--fs-label);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-gray-400);
+  position: relative;
+  padding-bottom: 4px;
+}
+.main-nav a:hover, .main-nav a.is-active { color: var(--c-offwhite); }
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 1px;
+  background: var(--c-lime);
+  transition: width var(--dur-fast) var(--ease-out);
+}
+.main-nav a:hover::after, .main-nav a.is-active::after { width: 100%; }
+
+.nav-toggle {
+  display: none;
+  width: 32px; height: 32px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+.nav-toggle span {
+  display: block;
+  height: 1px;
+  background: var(--c-offwhite);
+  transition: transform var(--dur-fast) var(--ease-out), opacity var(--dur-fast) var(--ease-out);
+}
+
+@media (max-width: 760px) {
+  .main-nav {
+    position: fixed;
+    inset: 0;
+    top: 56px;
+    background: var(--c-black);
+    padding: var(--sp-5) var(--page-margin);
+    transform: translateX(100%);
+    transition: transform var(--dur-med) var(--ease-out);
+  }
+  .main-nav.is-open { transform: translateX(0); }
+  .main-nav ul { flex-direction: column; gap: var(--sp-4); }
+  .main-nav a { font-size: var(--fs-h3); color: var(--c-offwhite); }
+  .nav-toggle { display: flex; }
+}
+
+/* --- Buttons / links with arrow --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--f-label);
+  font-size: var(--fs-small);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: var(--sp-2) var(--sp-4);
+  border: 1px solid var(--c-line);
+  border-radius: var(--radius-sm);
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.btn:hover { background: var(--c-lime); color: var(--c-black); border-color: var(--c-lime); }
+.section--paper .btn { border-color: var(--c-line-dark); }
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  font-family: var(--f-label);
+  font-size: var(--fs-small);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.link-arrow svg { width: 14px; height: 14px; transition: transform var(--dur-fast) var(--ease-out); }
+.link-arrow:hover svg { transform: translateX(4px); }
+.link-arrow:hover { color: var(--c-lime); }
+
+/* --- Tag chip --- */
+.tag {
+  display: inline-block;
+  font-family: var(--f-label);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 1px solid var(--c-line);
+  border-radius: 999px;
+  color: var(--c-gray-400);
+}
+.section--paper .tag { border-color: var(--c-line-dark); color: var(--c-gray-600); }
+
+/* --- Placeholder block (for missing assets) --- */
+.placeholder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--c-gray-900), var(--c-gray-900) 10px,
+    #0e0e0d 10px, #0e0e0d 20px
+  );
+  border: 1px dashed var(--c-gray-600);
+  color: var(--c-gray-400);
+  text-align: center;
+  padding: var(--sp-4);
+}
+.placeholder__inner {
+  font-family: var(--f-label);
+  font-size: var(--fs-small);
+  max-width: 32ch;
+  line-height: 1.5;
+}
+.placeholder__inner strong { color: var(--c-lime); display: block; margin-bottom: 6px; letter-spacing: 0.05em; text-transform: uppercase; }
+
+/* --- Highlight mark (neon block behind text, like a highlighter) ---
+   Wrap any text in <mark class="mark">...</mark>.
+   Background color is controlled by --mark-color (defaults to lime) —
+   override it inline or on a parent to reuse this for other accents. */
+.mark {
+  background: var(--mark-color, var(--c-lime));
+  color: var(--c-black);
+  padding: 0.02em 0.18em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+/* --- Video placeholder (clickable link to Google Drive) ---
+   Swap the href to the real Drive link — the card itself never needs
+   restyling, it's already wired to look like a clickable video slot. */
+.video-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--c-gray-900), var(--c-gray-900) 10px,
+    #0e0e0d 10px, #0e0e0d 20px
+  );
+  border: 1px dashed var(--c-lime);
+  text-align: center;
+  padding: var(--sp-4);
+  transition: background var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.video-placeholder:hover {
+  background: rgba(204,255,0,0.06);
+}
+.video-placeholder__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--c-lime);
+}
+.video-placeholder__inner strong {
+  font-family: var(--f-label);
+  font-size: var(--fs-small);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--c-offwhite);
+}
+.video-placeholder__inner span {
+  font-family: var(--f-label);
+  font-size: 0.72rem;
+  color: var(--c-gray-400);
+  max-width: 32ch;
+}
+/* Compact variant used inside motion-card thumbs */
+.video-placeholder--compact {
+  min-height: unset;
+  aspect-ratio: 16/9;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+/* --- Marquee (used in hero) --- */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid var(--c-line);
+  border-bottom: 1px solid var(--c-line);
+  padding-block: var(--sp-3);
+}
+.marquee__track {
+  display: inline-flex;
+  gap: var(--sp-5);
+  animation: marquee 28s linear infinite;
+}
+.marquee span {
+  font-family: var(--f-display);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  text-transform: uppercase;
+  color: var(--c-gray-600-onblack);
+  letter-spacing: 0.02em;
+}
+.marquee span em { color: var(--c-lime); font-style: normal; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* --- Lightbox --- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(10,10,10,0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+.lightbox.is-open { opacity: 1; pointer-events: auto; }
+.lightbox img { max-height: 88vh; max-width: 100%; object-fit: contain; border: 1px solid var(--c-line); }
+.lightbox__close {
+  position: absolute;
+  top: var(--sp-3); right: var(--sp-3);
+  width: 40px; height: 40px;
+  border: 1px solid var(--c-line);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.lightbox__close:hover { background: var(--c-lime); color: var(--c-black); border-color: var(--c-lime); }
+
+/* --- Back to top --- */
+.to-top {
+  position: fixed;
+  right: var(--sp-3); bottom: var(--sp-3);
+  z-index: 90;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--c-line);
+  background: var(--c-black);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+.to-top.is-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.to-top:hover { background: var(--c-lime); border-color: var(--c-lime); color: var(--c-black); }

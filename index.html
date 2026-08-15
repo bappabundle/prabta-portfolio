@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prabu Ata Esawina — Brand & Visual Communication Designer</title>
+<meta name="description" content="Creativity backed by business thinking. Portfolio of Prabu Ata Esawina — branding, campaigns, motion, and visual communication." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0a0a0a" />
+<meta name="color-scheme" content="dark" />
+
+<!-- Social preview (reuses the same title/description above) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Prabu Ata Esawina — Brand & Visual Communication Designer" />
+<meta property="og:description" content="Creativity backed by business thinking. Portfolio of Prabu Ata Esawina — branding, campaigns, motion, and visual communication." />
+<meta property="og:image" content="assets/img/logogram.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Prabu Ata Esawina — Brand & Visual Communication Designer" />
+<meta name="twitter:description" content="Creativity backed by business thinking. Portfolio of Prabu Ata Esawina — branding, campaigns, motion, and visual communication." />
+<meta name="twitter:image" content="assets/img/logogram.png" />
+
+<!-- Favicon (reuses existing brand mark, no new asset needed) -->
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+<link rel="apple-touch-icon" href="assets/img/logo.svg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Modular CSS: tokens first, then base, layout, components, sections -->
+<link rel="stylesheet" href="assets/css/01-tokens.css">
+<link rel="stylesheet" href="assets/css/02-base.css">
+<link rel="stylesheet" href="assets/css/03-layout.css">
+<link rel="stylesheet" href="assets/css/04-components.css">
+<link rel="stylesheet" href="assets/css/05-sections.css">
+
+<!-- If JS fails to load, .reveal elements must not stay stuck at opacity:0 -->
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ==========================================================
+     HEADER / NAV
+     ========================================================== -->
+<header class="site-header">
+  <a href="#top" class="brand-mark" aria-label="Prabu Ata Esawina — home">
+    <img src="assets/img/logo.svg" alt="Prabu Ata Esawina Logo" class="brand-mark__img" width="24" height="24">
+    <span>PRABU&nbsp;ATA</span>
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="main-nav" id="primary-navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ==========================================================
+       01 — HERO
+       ========================================================== -->
+  <section class="hero" id="top">
+    <!-- LOGOGRAM: taruh file di assets/img/logogram.png (PNG transparan disarankan).
+         Selama file belum ada, box putus-putus di bawah akan tampil otomatis. -->
+    <div class="hero__logogram reveal">
+      <img src="assets/img/logogram.png" alt="Prabu Ata Esawina logogram"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="hero__logogram-fallback">
+        <span>LOGOGRAM<br>PLACEHOLDER<br><small>assets/img/logogram.png</small></span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero__eyebrow-row">
+        <span class="eyebrow">Portfolio · 2026</span>
+        <span class="eyebrow">Bandung, Indonesia</span>
+      </div>
+
+      <h1 class="hero__title display">
+        <span class="line"><span>Prabu <mark class="mark">Ata</mark></span></span>
+        <span class="line"><span>Esawina</span></span>
+      </h1>
+
+      <div class="hero__meta">
+        <div>
+          <p class="hero__role"><mark class="mark">Brand & Visual Communication Designer</mark></p>
+          <p class="lede" style="margin-top: 0.6rem;">Creativity Backed by Business Thinking.</p>
+        </div>
+        <div class="hero__contact">
+          <a href="mailto:prabuata.e@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/prabuata/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#work"><mark class="mark">View selected work ↓</mark></a>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span><mark class="mark">Hybrid Creative <em>·</em> Brand & Visual <em>·</em> Communication Designer <em>·</em> Marketing-minded <em>·</em> Graphic Designer <em>·</em> Strategic Brand & Visual Designer <em>·</em></mark></span>
+          <span><mark class="mark">Hybrid Creative <em>·</em> Brand & Visual <em>·</em> Communication Designer <em>·</em> Marketing-minded <em>·</em> Graphic Designer <em>·</em> Strategic Brand & Visual Designer <em>·</em></mark></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-cue"><span class="dot"></span> <mark class="mark">Scroll to explore</mark></div>
+  </section>
+
+  <!-- ==========================================================
+       02 — MANIFESTO / ABOUT
+       ========================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-head__num">02</span>
+        <span class="eyebrow">About me</span>
+      </div>
+
+      <div class="about__grid">
+        <div class="reveal">
+          <h2 class="about__headline display">I think <mark class="mark">before</mark><br>I design.</h2>
+        </div>
+        <div class="about__body reveal">
+          <p>I didn't become a designer because I loved Adobe Illustrator. <mark class="mark">I became a designer because I've always been fascinated by how thoughtful visuals can make information clearer,</mark> ideas easier to understand, and communication more effective.</p>
+          <p>My journey started with simple posters for my local youth organization. Later I learned logo design and digital illustration, and eventually turned commissioned caricatures into one of my first creative businesses.</p>
+          <p>As my career evolved, I realized design alone was never enough. Working in marketing taught me to ask different questions: <mark class="mark">why are we creating this, who is this for, what action should people take after seeing it?</mark></p>
+          <p>Today I approach projects from both creative and business perspectives. Whether it's branding, campaigns, annual reports, or digital content, I believe design should serve a purpose, not just aesthetics.</p>
+        </div>
+      </div>
+
+      <div class="how-i-work">
+        <div class="how-i-work__item reveal">
+          <span class="index-num">01</span>
+          <h3>Business thinking</h3>
+          <p><mark class="mark">I start by understanding the objective, audience, context, and desired outcome before visual execution.</mark></p>
+        </div>
+        <div class="how-i-work__item reveal">
+          <span class="index-num">02</span>
+          <h3>Structured problem solving</h3>
+          <p><mark class="mark">Good design is systematic. Layout, hierarchy, typography, and imagery should solve a communication problem.</mark></p>
+        </div>
+        <div class="how-i-work__item reveal">
+          <span class="index-num">03</span>
+          <h3>Continuous growth</h3>
+          <p><mark class="mark">The projects I enjoy most are the ones I've never done before. Learning something new is what keeps me creative.</mark></p>
+        </div>
+      </div>
+
+      <div class="signature-quote reveal">
+        <p>I don't chase beautiful outcomes.<br>I enjoy solving <em>difficult problems.</em><br><mark class="mark">Beautiful outcomes are simply the result.</mark></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       03 — BEYOND DESIGN / JOURNEY
+       ========================================================== -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-head__num">03</span>
+        <span class="eyebrow">My journey so far</span>
+      </div>
+      <p class="lede reveal" style="margin-bottom: var(--sp-5);">My path wasn't linear. <mark class="mark">I explored, built, failed, and learned.</mark> Every step shaped the way I think, create, and solve problems today.</p>
+
+      <div class="journey-list">
+        <div class="journey-item reveal">
+          <span class="journey-item__num">01</span>
+          <div>
+            <h3 class="journey-item__title">Self-taught designer</h3>
+            <div class="journey-item__body"><p><mark class="mark">Started from curiosity</mark> and YouTube. Learned poster design, logo design, illustration, and eventually commissioned caricatures — one of my first moments when creative skill became an actual source of income.</p></div>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <span class="journey-item__num">02</span>
+          <div>
+            <h3 class="journey-item__title">Marketing Communication professional</h3>
+            <div class="journey-item__body"><p>Learned marketing inside TRAC ASTRA. <mark class="mark">Design became only one part of the job</mark> — I worked with content, photo, video, editing, competitor analysis, benchmarking, KOLs, and events. My ability to think critically became as important as my ability to execute.</p></div>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <span class="journey-item__num">03</span>
+          <div>
+            <h3 class="journey-item__title">Brand builder &amp; entrepreneur</h3>
+            <div class="journey-item__body"><p>Built Kamigo Sandals with a close friend. The business eventually failed, but the <mark class="mark">experience taught me</mark> about branding, production, product-market timing, operations, and the reality of running a business.</p></div>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <span class="journey-item__num">04</span>
+          <div>
+            <h3 class="journey-item__title">Creative problem solver</h3>
+            <div class="journey-item__body"><p><mark class="mark">Worked across branding, campaigns, publications, motion, events, social media, and international remote projects.</mark> The common thread was never a particular medium — it was solving the communication problem.</p></div>
+          </div>
+        </div>
+        <div class="journey-item reveal">
+          <span class="journey-item__num">05</span>
+          <div>
+            <h3 class="journey-item__title">Still learning</h3>
+            <div class="journey-item__body"><p><mark class="mark">I feel most alive when I work on something I've never done before and come out of it knowing I've leveled up.</mark></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       04 — SELECTED EXPERIENCE
+       ========================================================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-head__num">04</span>
+        <span class="eyebrow">Selected experience</span>
+      </div>
+
+      <div class="exp-list reveal">
+        <div class="exp-row">
+          <span class="exp-row__num">01</span>
+          <div>
+            <div class="exp-row__role">TRAC Bus — Marketing Communication</div>
+            <div class="exp-row__org">PT United Automobil Sembilanpuluh</div>
+          </div>
+          <div class="exp-row__org"><mark class="mark">KOL collab, event, brand activation</mark></div>
+          <div class="exp-row__date">Feb 2019 – Jan 2020</div>
+        </div>
+        <div class="exp-row">
+          <span class="exp-row__num">02</span>
+          <div>
+            <div class="exp-row__role">Marketing Communication</div>
+            <div class="exp-row__org">PT Serasi Autoraya / Astra (TRAC, mobil88, IBID, SERA)</div>
+          </div>
+          <div class="exp-row__org"><mark class="mark">Social, publication, vendor pitching</mark></div>
+          <div class="exp-row__date">Jan 2020 – Jan 2021</div>
+        </div>
+        <div class="exp-row">
+          <span class="exp-row__num">03</span>
+          <div>
+            <div class="exp-row__role">Marketing</div>
+            <div class="exp-row__org">Kamigo Sandals — co-founded, later failed</div>
+          </div>
+          <div class="exp-row__org"><mark class="mark">Branding, launch, operations</mark></div>
+          <div class="exp-row__date">Jan 2021 – May 2022</div>
+        </div>
+        <div class="exp-row">
+          <span class="exp-row__num">04</span>
+          <div>
+            <div class="exp-row__role">Brand Communication Specialist</div>
+            <div class="exp-row__org">The Strong Minor Project</div>
+          </div>
+          <div class="exp-row__org"><mark class="mark">Campaigns, social, event installation</mark></div>
+          <div class="exp-row__date">Sep 2022 – Present</div>
+        </div>
+        <div class="exp-row">
+          <span class="exp-row__num">05</span>
+          <div>
+            <div class="exp-row__role">Graphic Designer (Remote)</div>
+            <div class="exp-row__org">Light Upon Light — Eman Channel Limited, UK</div>
+          </div>
+          <div class="exp-row__org"><mark class="mark">International, Asana, motion</mark></div>
+          <div class="exp-row__date">Sep 2024 – Sep 2025</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       05 — WORK INDEX
+       ========================================================== -->
+  <section class="section section--tight" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-head__num">05</span>
+        <span class="eyebrow">Selected case studies</span>
+      </div>
+      <div class="reveal">
+        <div class="lede"><mark class="mark">Jump straight to any project</mark> — each one is chosen to show range, not just polish.</div>
+      </div>
+      <ul class="work-index-list">
+        <li><a class="link-arrow" href="#case-trac">01 — TRAC × RANS Luxury Bus Campaign <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="link-arrow" href="#case-sera-ar">02 — SERA Annual Report <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="link-arrow" href="#case-sera-bulletin">03 — SERA Internal Bulletin <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="link-arrow" href="#case-tsmp">04 — The Strong Minor Project × COIVNECT <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="link-arrow" href="#case-lul">05 — Light Upon Light <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="link-arrow" href="#case-motion">06 — Motion Graphics <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="link-arrow" href="#case-logo">07 — Logo &amp; Brand Identity <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+        <li><a class="link-arrow" href="#case-social">08 — Social &amp; Campaign Gallery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CASE STUDY 01 — TRAC × RANS  (assets pending — placeholders)
+       ========================================================== -->
+  <section class="case-study" id="case-trac">
+    <div class="container">
+      <div class="case-study__head reveal">
+        <span class="index-num">01</span>
+        <h2 class="case-study__title display">TRAC × <mark class="mark">RANS</mark><br>Campaign</h2>
+        <div class="case-study__tags">
+          <span class="tag">Campaign</span>
+          <span class="tag">KOL</span>
+          <span class="tag">Brand Collaboration</span>
+        </div>
+      </div>
+
+      <div class="case-study__hero-img reveal">
+        <img src="assets/img/headers/trac_header.jpg" width="2000" height="740" alt="TRAC × RANS Luxury Bus Campaign — Raffi Ahmad collaboration key visual" data-lightbox loading="lazy">
+      </div>
+
+      <div class="case-study__body reveal">
+        <div class="case-study__col">
+          <h4>The context</h4>
+          <p>TRAC Bus was promoting its luxury bus offering. I was part of a three-person team handling the collaboration between TRAC and Raffi Ahmad / RANS, during a period when Raffi Ahmad was taking a break from television. There was internal concern from the BOD that he might not match the intended premium-travel niche.</p>
+          <h4>My role</h4>
+          <ul>
+            <li>Campaign concept &amp; strategy</li>
+            <li>KOL &amp; partnership coordination</li>
+            <li>Host for the media road test</li>
+            <li>Creative direction, asset &amp; content production</li>
+            <li>Team &amp; vendor management</li>
+          </ul>
+        </div>
+        <div class="case-study__col">
+          <h4>The result</h4>
+          <p>Once the campaign aired, it challenged the internal doubt directly: the luxury bus became fully booked, with verified inquiries from women's/socialite communities interested in booking it for group trips — including arisan trips from Jakarta to Bandung. The audience discovered the service through the Raffi Ahmad campaign.</p>
+          <h4>Lesson learned</h4>
+          <p>A campaign doesn't need to look perfectly targeted on paper to work. What matters is understanding how the audience actually responds — not how a brief predicts they will.</p>
+        </div>
+      </div>
+
+      <p class="case-study__note"><mark class="mark">I was also asked to MC a luxury bus road-test event for KOLs in the relevant travel niche.</mark></p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CASE STUDY 02 — SERA ANNUAL REPORT
+       ========================================================== -->
+  <section class="case-study" id="case-sera-ar">
+    <div class="container">
+      <div class="case-study__head reveal">
+        <span class="index-num">02</span>
+        <h2 class="case-study__title display">SERA<br><mark class="mark">Annual</mark> Report</h2>
+        <div class="case-study__tags">
+          <span class="tag">Editorial Design</span>
+          <span class="tag">Data Viz</span>
+          <span class="tag">Print Production</span>
+        </div>
+      </div>
+
+      <div class="case-study__hero-img reveal">
+        <img src="assets/img/headers/sera_ar_header.jpg" width="2000" height="740" alt="SERA Annual Report 2021 — campaign header, book mockup with financial highlights" data-lightbox loading="lazy">
+      </div>
+
+      <div class="case-study__body reveal">
+        <div class="case-study__col">
+          <h4>Why it matters</h4>
+          <p>Long-form editorial design, information hierarchy, corporate communication, and production discipline — for a publication distributed to shareholders, investors, and other stakeholders.</p>
+          <h4>My role</h4>
+          <ul>
+            <li>Designed the complete visual layout across 250+ pages while maintaining consistency</li>
+            <li>Translated dense corporate content into clean, readable, professional publication</li>
+            <li>Managed page composition, grids, styles, charts, tables, and visual elements</li>
+            <li>Prepared production-ready files for professional printing and digital distribution</li>
+          </ul>
+        </div>
+        <div class="case-study__col">
+          <h4>Scope</h4>
+          <p>Annual Report 2020 and Annual Report 2021 — covering company overview, vision &amp; values, business network, significant events, awards, consolidated financial highlights, and board reports.</p>
+          <h4>Skills demonstrated</h4>
+          <p>Editorial design · Typography · Long-form layout · Adobe InDesign · Print production · Corporate branding · Data visualization · Attention to detail.</p>
+        </div>
+      </div>
+
+      <div class="case-study__stats reveal">
+        <div><div class="stat__num">250+</div><div class="stat__label">Pages designed &amp; produced</div></div>
+        <div><div class="stat__num">2</div><div class="stat__label">Full editions — 2020 &amp; 2021</div></div>
+      </div>
+
+      <div class="case-study__gallery reveal">
+        <img src="assets/img/gallery/sera_gallery.jpg" alt="SERA Annual Report additional spreads" data-lightbox loading="lazy">
+        <img src="assets/img/gallery/sera_covers.jpg" alt="SERA Annual Report 2020 spreads — cover, table of contents, business network map, employee charts" data-lightbox loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CASE STUDY 03 — SERA INTERNAL BULLETIN
+       ========================================================== -->
+  <section class="case-study" id="case-sera-bulletin">
+    <div class="container">
+      <div class="case-study__head reveal">
+        <span class="index-num">03</span>
+        <h2 class="case-study__title display">SERA Update<br>Internal Corporate <mark class="mark">Bulletin</mark></h2>
+        <div class="case-study__tags">
+          <span class="tag">Publication Design</span>
+          <span class="tag">Monthly Cadence</span>
+        </div>
+      </div>
+
+      <div class="case-study__hero-img reveal">
+        <img src="assets/img/headers/sera_bulletin_header.jpg" width="2000" height="740" alt="SERA Update Internal Corporate Bulletin — Vol. 12 magazine mockup" data-lightbox loading="lazy">
+      </div>
+
+      <div class="case-study__body reveal">
+        <div class="case-study__col">
+          <h4>Overview</h4>
+          <p>Designed and produced the company's monthly internal bulletin — communicating corporate updates, achievements, employee stories, and organizational initiatives. Solely responsible for design and production from concept to final publication.</p>
+        </div>
+        <div class="case-study__col">
+          <h4>COVID adaptation</h4>
+          <p>During the pandemic, the printed bulletin was transformed into a mobile-first vertical PDF optimized for smartphone reading — a decision made around actual reader behavior and distribution constraints, not just aesthetics.</p>
+        </div>
+      </div>
+
+      <div class="case-study__gallery reveal">
+        <img src="assets/img/gallery/bulletin_covers.jpg" alt="SERA Update bulletin covers and spreads across editions" data-lightbox loading="lazy">
+        <img src="assets/img/gallery/bulletin_digital.jpg" alt="SERA Update digital edition — mobile-first vertical PDF, 2020" data-lightbox loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CASE STUDY 04 — THE STRONG MINOR PROJECT × COIVNECT
+       ========================================================== -->
+  <section class="case-study" id="case-tsmp">
+    <div class="container">
+      <div class="case-study__head reveal">
+        <span class="index-num">04</span>
+        <h2 class="case-study__title display">The Strong Minor<br>Project — <mark class="mark">COIVNECT</mark></h2>
+        <div class="case-study__tags">
+          <span class="tag">Brand Communication</span>
+          <span class="tag">Event Installation</span>
+          <span class="tag">Campaign</span>
+        </div>
+      </div>
+
+      <div class="case-study__hero-img reveal">
+        <img src="assets/img/headers/tsmp_header.jpg" width="2000" height="740" alt="The Strong Minor Project — CONNECT campaign header, event stage photo" data-lightbox loading="lazy">
+      </div>
+
+
+      <div class="case-study__body reveal">
+        <div class="case-study__col">
+          <h4>Role since 2022</h4>
+          <p>Integrated marketing and branding materials — social media, campaign visuals, event posters, digital assets, motion graphics — plus large-scale event installation coordination for COIVNECT: a 120,000-piece Origami Wall, a New Media Installation Pyramid, and Stamp Art.</p>
+          <h4>What made it meaningful</h4>
+          <p>Not the visual output alone — it's managing complex ongoing delivery, handling this project alongside Light Upon Light without either one collapsing, and a logo I created now being used in Palestine.</p>
+        </div>
+        <div class="case-study__col">
+          <h4>Campaign performance</h4>
+          <p>Meta ad creatives I produced contributed directly to selling out 10,000 tickets in under two months. Note: this is campaign-level performance — the installation itself was one contributing part of a larger cross-functional effort, not the sole driver of ticket sales.</p>
+        </div>
+      </div>
+
+      <div class="case-study__stats reveal">
+        <div><div class="stat__num">120K</div><div class="stat__label">Origami pieces — installation scale</div></div>
+        <div><div class="stat__num">10K</div><div class="stat__label">Tickets sold in under 2 months</div></div>
+        <div><div class="stat__num">7M+</div><div class="stat__label">Campaign impressions</div></div>
+        <div><div class="stat__num">~35%</div><div class="stat__label">Audience growth</div></div>
+      </div>
+
+      <div class="case-study__gallery reveal" style="margin-bottom: var(--sp-3);">
+        <img src="assets/img/gallery/tsmp_grid.jpg" alt="The Strong Minor Project Instagram feed carousel covers" data-lightbox loading="lazy">
+        <img src="assets/img/gallery/coivnect_top.jpg" alt="COIVNECT Meta ad campaign key visuals" data-lightbox loading="lazy">
+      </div>
+      <div class="case-study__gallery reveal">
+        <img src="assets/img/gallery/coivnect_grid.jpg" alt="COIVNECT Meta ad campaign — additional creative variants" data-lightbox loading="lazy">
+        <img src="assets/img/gallery/tsmp_top.jpg" alt="The Strong Minor Project Instagram campaign key visuals — bold neon aesthetic" data-lightbox loading="lazy">
+      </div>
+
+      <p class="case-study__note">Carousel covers shown only — each post typically contains 10–20 frames.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CASE STUDY 05 — LIGHT UPON LIGHT
+       ========================================================== -->
+  <section class="case-study" id="case-lul">
+    <div class="container">
+      <div class="case-study__head reveal">
+        <span class="index-num">05</span>
+        <h2 class="case-study__title display">Light <mark class="mark">Upon</mark> Light</h2>
+        <div class="case-study__tags">
+          <span class="tag">Remote</span>
+          <span class="tag">International</span>
+          <span class="tag">Eman Channel Ltd, UK</span>
+        </div>
+      </div>
+
+      <div class="case-study__body reveal">
+        <div class="case-study__col">
+          <h4>Responsibilities</h4>
+          <p>Social media graphics, event posters, digital marketing assets, motion graphics, and animated visual content for tours across the UK, USA, and Canada — managed through Asana with international stakeholders, in English.</p>
+        </div>
+        <div class="case-study__col">
+          <h4>Why it matters</h4>
+          <p>This isn't the most visually flashy project in this portfolio — it demonstrates reliability, remote workflow discipline, and the ability to run this alongside The Strong Minor Project without either falling behind, from Sep 2024 to Sep 2025.</p>
+        </div>
+      </div>
+
+      <div class="case-study__gallery reveal">
+        <img src="assets/img/gallery/lightuponlight_grid.jpg" alt="Light Upon Light key visuals — UK, USA, and Canada tour posters" data-lightbox loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CASE STUDY 06 — MOTION GRAPHICS
+       ========================================================== -->
+  <section class="case-study" id="case-motion">
+    <div class="container">
+      <div class="case-study__head reveal">
+        <span class="index-num">06</span>
+        <h2 class="case-study__title display"><mark class="mark">Motion</mark> Graphics</h2>
+        <div class="case-study__tags"><span class="tag">Video Editing</span><span class="tag">After Effects</span></div>
+      </div>
+      <p class="lede reveal" style="margin-bottom: var(--sp-4);">Selected motion work, produced under real production-time constraints.</p>
+
+      <div class="motion-grid reveal">
+        <div class="motion-card">
+          <a class="motion-card__thumb" href="https://drive.google.com/file/d/1OcwoHT7WInAeSeQrLM09_RgrlYIxLoeY/view?usp=drive_link" target="_blank" rel="noopener">
+            <img src="assets/img/gallery/motion_apple.jpg" alt="Apple-style launch video thumbnail grid" loading="lazy">
+            <div class="motion-card__play"><svg viewBox="0 0 24 24" fill="var(--c-lime)"><circle cx="12" cy="12" r="11" fill="rgba(10,10,10,0.55)" stroke="var(--c-lime)" stroke-width="1"/><path d="M10 8l6 4-6 4V8z"/></svg></div>
+          </a>
+          <div class="motion-card__meta"><h4>Apple-style launch video</h4><p>1 min · 2 days production</p></div>
+        </div>
+        <div class="motion-card">
+          <a class="motion-card__thumb" href="https://drive.google.com/file/d/1AjNk8b3te1cV_c8o0WtlPjkiBJ8KayNd/view?usp=drive_link" target="_blank" rel="noopener">
+            <img src="assets/img/gallery/motion_looping.jpg" alt="Internal event opening and looping video thumbnail grid" loading="lazy">
+            <div class="motion-card__play"><svg viewBox="0 0 24 24" fill="var(--c-lime)"><circle cx="12" cy="12" r="11" fill="rgba(10,10,10,0.55)" stroke="var(--c-lime)" stroke-width="1"/><path d="M10 8l6 4-6 4V8z"/></svg></div>
+          </a>
+          <div class="motion-card__meta"><h4>Internal event opening &amp; looping</h4><p>1 min · 2 days production</p></div>
+        </div>
+        <div class="motion-card">
+          <a class="motion-card__thumb" href="https://drive.google.com/file/d/1QvbUc6XD0jhFe0rOKVF6hPyN7qbAsCyl/view?usp=drive_link" target="_blank" rel="noopener">
+            <img src="assets/img/gallery/motion_bumper13.jpg" alt="Speaker bumper video thumbnail grid, 13 seconds" loading="lazy">
+            <div class="motion-card__play"><svg viewBox="0 0 24 24" fill="var(--c-lime)"><circle cx="12" cy="12" r="11" fill="rgba(10,10,10,0.55)" stroke="var(--c-lime)" stroke-width="1"/><path d="M10 8l6 4-6 4V8z"/></svg></div>
+          </a>
+          <div class="motion-card__meta"><h4>Speaker bumper</h4><p>13 sec · half-day production</p></div>
+        </div>
+        <div class="motion-card">
+          <a class="motion-card__thumb" href="https://drive.google.com/file/d/1p_Upeg0VxU3Xxb9bS7CPEJgu7oP3q7Zt/view?usp=drive_link" target="_blank" rel="noopener">
+            <img src="assets/img/gallery/motion_bumper6.jpg" alt="Speaker bumper variants thumbnail grid, 9 variants" loading="lazy">
+            <div class="motion-card__play"><svg viewBox="0 0 24 24" fill="var(--c-lime)"><circle cx="12" cy="12" r="11" fill="rgba(10,10,10,0.55)" stroke="var(--c-lime)" stroke-width="1"/><path d="M10 8l6 4-6 4V8z"/></svg></div>
+          </a>
+          <div class="motion-card__meta"><h4>Speaker bumper — 9 variants</h4><p>6 sec each · 3 days production</p></div>
+        </div>
+        <div class="motion-card">
+          <a class="motion-card__thumb" href="https://drive.google.com/file/d/1zswh-FUNvT0sjHAxdSFctjr82nbEKwh2/view?usp=drive_link" target="_blank" rel="noopener">
+            <img src="assets/img/gallery/Thumbnails Novelship.png" alt="Novelship App ad" loading="lazy">
+            <div class="motion-card__play"><svg viewBox="0 0 24 24" fill="var(--c-lime)"><circle cx="12" cy="12" r="11" fill="rgba(10,10,10,0.55)" stroke="var(--c-lime)" stroke-width="1"/><path d="M10 8l6 4-6 4V8z"/></svg></div>
+          </a>
+          <div class="motion-card__meta"><h4>Novelship App ad</h4><p>This one was assisted by AI</p></div>
+        </div>
+        <div class="motion-card">
+          <a class="motion-card__thumb" href="https://drive.google.com/file/d/1fGkyBrz4-cUuXWhr4A9PjkryvmSRw_sY/view?usp=drive_link" target="_blank" rel="noopener">
+            <img src="assets/img/gallery/Thumbnails watch your tongue.png" alt="Things You Should Never Say As a Muslim" loading="lazy">
+            <div class="motion-card__play"><svg viewBox="0 0 24 24" fill="var(--c-lime)"><circle cx="12" cy="12" r="11" fill="rgba(10,10,10,0.55)" stroke="var(--c-lime)" stroke-width="1"/><path d="M10 8l6 4-6 4V8z"/></svg></div>
+          </a>
+          <div class="motion-card__meta"><h4>Video Content for specific Niche</h4><p>This one was assisted by AI</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CASE STUDY 07 — LOGO & BRAND IDENTITY
+       ========================================================== -->
+  <section class="case-study" id="case-logo">
+    <div class="container">
+      <div class="case-study__head reveal">
+        <span class="index-num">07</span>
+        <h2 class="case-study__title display">Logo &amp; Brand <mark class="mark">Identity</mark></h2>
+        <div class="case-study__tags"><span class="tag">Symbol Construction</span><span class="tag">Typography</span></div>
+      </div>
+      <p class="lede reveal" style="margin-bottom: var(--sp-4);">Three favorite identity projects — each concept built from a deliberate symbolic idea, not decoration.</p>
+      <div class="logo-showcase reveal">
+        <img src="assets/img/logos/3 Fav.svg" alt="Logo portfolio — Hunnahijab, POB House, and The Strong Minor Project identities with concept breakdowns" data-lightbox loading="lazy" width="1080" height="2294">
+
+      </div>
+
+      <!-- LOGO WALL: kumpulan logo tambahan, tanpa penjelasan panjang.
+           Untuk nambah logo baru: copy satu blok <div class="logo-wall__item"> lalu ganti src & alt.
+           Placeholder (tanpa gambar) otomatis muncul kalau file belum ada. -->
+      <p class="eyebrow reveal" style="display:block; margin-top: var(--sp-6); margin-bottom: var(--sp-3);">More marks</p>
+      <div class="logo-wall reveal">
+        <div class="logo-wall__item"><img src="assets/img/logos/ABG.svg" alt="Anugerah Bersaudara Group" loading="lazy" data-lightbox></div>
+        <div class="logo-wall__item"><img src="assets/img/logos/jigame.svg" alt="jigame" loading="lazy" data-lightbox></div>
+        <div class="logo-wall__item"><img src="assets/img/logos/Odading Odadang.svg" alt="Odading Odadang" loading="lazy" data-lightbox></div>
+        <div class="logo-wall__item"><img src="assets/img/logos/Ranayu.svg" alt="Ranayu" loading="lazy" data-lightbox></div>
+        <div class="logo-wall__item"><img src="assets/img/logos/senu.svg" alt="senu" loading="lazy" data-lightbox></div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CASE STUDY 08 — SOCIAL / CAMPAIGN GALLERY
+       ========================================================== -->
+  <section class="case-study" id="case-social">
+    <div class="container">
+      <div class="case-study__head reveal">
+        <span class="index-num">08</span>
+        <h2 class="case-study__title display">Social &amp; Campaign Gallery</h2>
+        <div class="case-study__tags"><span class="tag">Feed</span><span class="tag">Stories</span><span class="tag">Ads</span></div>
+      </div>
+      <p class="lede reveal" style="margin-bottom: var(--sp-4);">Work spans several brands across different roles and years — shown here as a range, not one continuous employment.</p>
+
+      <div class="wall-tabs reveal" data-tab-group="social-wall" role="tablist">
+        <button class="wall-tab is-active" data-tab="olxmobbi">olxmobbi / mobil88</button>
+        <button class="wall-tab" data-tab="trac">TRAC Astra</button>
+        <button class="wall-tab" data-tab="sera">Serasi Autoraya</button>
+        <button class="wall-tab" data-tab="kamigo">Kamigo Sandals</button>
+      </div>
+
+      <div class="reveal">
+        <div class="wall-panel is-active" data-panel-group="social-wall" data-panel="olxmobbi">
+          <img src="assets/img/gallery/olxmobbi_grid.jpg" alt="olxmobbi (previously mobil88_ASTRA) Instagram feed, 2019–2021" data-lightbox loading="lazy">
+        </div>
+        <div class="wall-panel" data-panel-group="social-wall" data-panel="trac">
+          <img src="assets/img/gallery/trac_grid.jpg" alt="TRAC_Astra Instagram feed, 2019–2020" data-lightbox loading="lazy">
+        </div>
+        <div class="wall-panel" data-panel-group="social-wall" data-panel="sera">
+          <img src="assets/img/gallery/sera_ig_grid.jpg" alt="Serasi Autoraya Instagram feed, 2019–2021" data-lightbox loading="lazy">
+        </div>
+        <div class="wall-panel" data-panel-group="social-wall" data-panel="kamigo">
+          <img src="assets/img/gallery/kamigo_grid.jpg" alt="Kamigo Sandals Instagram feed, 2021–2022" data-lightbox loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       PHOTOGRAPHY & VIDEOGRAPHY
+       ========================================================== -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-head__num">09</span>
+        <span class="eyebrow">Photography &amp; videography</span>
+      </div>
+      <div class="photography-showcase reveal">
+        <img src="assets/img/gallery/photography_grid.jpg" width="1600" height="932" alt="Photography and videography range — product, event, corporate, and behind-the-scenes" data-lightbox loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+     PERSONAL PROJECTS
+     ========================================================== -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-head__num">10</span>
+      <span class="eyebrow">Personal work / digital product exploration</span>
+    </div>
+
+    <p class="lede reveal" style="margin-bottom: var(--sp-4);">
+      Self-initiated personal product and technical projects — not commercial client work.
+      They show UI/dashboard thinking, product thinking, and an AI-assisted workflow,
+      not shipped UX case studies.
+    </p>
+
+    <div class="grid-12 reveal">
+      <div style="grid-column: span 6;">
+        <img
+          src="assets/img/gallery/UI UX xtigmate.png"
+          alt="XTIGMATE — local-first AI Operating System"
+          style="width: 100%; height: auto; display: block; border: 1px solid var(--c-line); cursor: zoom-in;"
+        >
+      </div>
+
+      <div style="grid-column: span 6;">
+        <img
+          src="assets/img/gallery/UI UX LPWS.png"
+          alt="LPWS — Logical Personal Wealth System, an IDX investing dashboard"
+          style="width: 100%; height: auto; display: block; border: 1px solid var(--c-line); cursor: zoom-in;"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ==========================================================
+       ENTREPRENEURIAL LESSONS
+       ========================================================== -->
+  <section class="section" id="lessons">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-head__num">11</span>
+        <span class="eyebrow">Lessons from building things that didn't always work</span>
+      </div>
+
+      <div class="lessons-grid reveal">
+        <div class="lesson-card">
+          <div><span class="lesson-tag">Distro T-Shirt</span><h4>First business attempt</h4><p>Failed partly because business knowledge was still limited.</p></div>
+          <p class="text-muted" style="font-size:0.78rem;">Lesson: creative ability isn't the same as business capability.</p>
+        </div>
+        <div class="lesson-card">
+          <div><span class="lesson-tag">Maklun / Garment</span><h4>Outsourced production</h4><p>Moved into handling outsourced production orders.</p></div>
+          <p class="text-muted" style="font-size:0.78rem;">Lesson: understanding the production chain changes how you quote creative work.</p>
+        </div>
+        <div class="lesson-card">
+          <div><span class="lesson-tag">Indah Logistik</span><h4>Logistics partnership</h4><p>Ran a logistics partnership as an additional income stream while employed.</p></div>
+          <p class="text-muted" style="font-size:0.78rem;">Lesson: business thinking is easier to understand when you own the outcome.</p>
+        </div>
+        <div class="lesson-card">
+          <div><span class="lesson-tag">Kamigo Sandals</span><h4>Outdoor product, COVID timing</h4><p>Built with a close friend; the business failed.</p></div>
+          <p class="text-muted" style="font-size:0.78rem;">Lesson: timing and market context can matter as much as product quality.</p>
+        </div>
+        <div class="lesson-card">
+          <div><span class="lesson-tag">Toastory</span><h4>Local toast business, Ciparay</h4><p>Peaked around 50–60 portions/day for ~6 months, then declined when QC weakened.</p></div>
+          <p class="text-muted" style="font-size:0.78rem;">Lesson: a good product isn't enough — systems must survive when the founder steps away.</p>
+        </div>
+        <div class="lesson-card">
+          <div><span class="lesson-tag">Charcoal Briquette</span><h4>Export attempt</h4><p>Mostly resulted in samples shipped, never reaching container-scale sales.</p></div>
+          <p class="text-muted" style="font-size:0.78rem;">Lesson: sending samples isn't the same as validating demand.</p>
+        </div>
+        <div class="lesson-card">
+          <div><span class="lesson-tag">Farming</span><h4>Land &amp; cultivation</h4><p>Stopped after the fourth harvest when the economics stopped working.</p></div>
+          <p class="text-muted" style="font-size:0.78rem;">Lesson: not every opportunity deserves to be pursued indefinitely.</p>
+        </div>
+      </div>
+
+      <p class="lede reveal" style="margin-top: var(--sp-5);">The point isn't "I failed many times." It's that <mark class="mark">I've repeatedly put ideas into the real world</mark> — and that shapes how I think about brands, customers, operations, timing, and communication.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SKILLS
+       ========================================================== -->
+  <section class="section section--paper" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-head__num">12</span>
+        <span class="eyebrow"><mark class="mark">Skills</mark></span>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h4><mark class="mark">Branding &amp; Creative</mark></h4>
+          <ul>
+            <li>Brand Communication</li><li>Visual Identity</li><li>Logo Design</li>
+            <li>Campaign Development</li><li>Creative Direction</li><li>Editorial Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4><mark class="mark">Marketing</mark></h4>
+          <ul>
+            <li>Marketing Communication</li><li>Digital Marketing</li><li>Campaign Planning</li>
+            <li>Audience Thinking</li><li>Competitor Analysis</li><li>Social Media</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4><mark class="mark">Execution</mark></h4>
+          <ul>
+            <li>Graphic Design</li><li>Motion Graphics</li><li>Video Editing</li>
+            <li>Photography</li><li>Data Visualization</li><li>Print Production</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4><mark class="mark">Project &amp; People</mark></h4>
+          <ul>
+            <li>Project Management</li><li>Vendor Coordination</li><li>Stakeholder Management</li>
+            <li>Event Management</li><li>KOL Coordination</li><li>Public Speaking / MC</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4><mark class="mark">Tools</mark></h4>
+          <ul>
+            <li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>Adobe InDesign</li>
+            <li>After Effects / Premiere</li><li>Figma · Blender · Fusion 360</li><li>AI-assisted workflow</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CLOSING / CONTACT
+       ========================================================== -->
+  <section class="closing" id="contact">
+    <div class="container">
+      <span class="eyebrow reveal">13 — Let's work together</span>
+      <h2 class="closing__title display reveal" style="margin-top: var(--sp-3);">Give me<br>a <em class="text-lime" style="font-style:normal;">brief.</em></h2>
+      <p class="lede closing__sub reveal">Give me a brief, a brand, and a goal, and I'll make it work. I work best where creative thinking meets real-world constraints.</p>
+      <div class="closing__cta reveal">
+        <a class="btn" href="mailto:prabuata.e@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/prabuata/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer container">
+  <span>© <span data-year>2026</span> Prabu Ata Esawina</span>
+  <span>Bandung, Indonesia</span>
+  <a href="#top" class="link-arrow">Back to top ↑</a>
+</footer>
+
+<button class="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- Modular JS: each file owns one behavior -->
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/reveal.js"></script>
+<script src="assets/js/lightbox.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
