@@ -35,8 +35,8 @@
   --fs-h3:     clamp(1.3rem, 2.4vw, 1.9rem);
   --fs-lead:   clamp(1.1rem, 1.6vw, 1.4rem);
   --fs-body:   1rem;
-  --fs-small:  0.85rem;
-  --fs-label:  0.75rem;
+  --fs-small:  1rem;
+  --fs-label:  0.875rem;
 
   /* --- Spacing scale --- */
   --sp-1: 0.4rem;
