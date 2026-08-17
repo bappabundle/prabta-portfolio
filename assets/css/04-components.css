@@ -422,3 +422,142 @@
     text-align: right !important;
   }
 }
+
+/* --- PDF portfolio cards --- */
+.pdf-card {
+  display: block;
+  width: 50%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.pdf-card img {
+  display: block;
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform var(--dur-med) var(--ease-out);
+}
+
+.pdf-card:hover img {
+  transform: scale(1.02);
+}
+
+/* --- PDF viewer --- */
+.pdf-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.pdf-viewer.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.pdf-viewer__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.pdf-viewer__window {
+  position: relative;
+  z-index: 1;
+  width: min(1100px, 94vw);
+  height: min(90vh, 900px);
+  background: var(--c-black);
+  border: 1px solid var(--c-line);
+}
+
+.pdf-viewer__window iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.pdf-viewer__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid var(--c-line);
+  background: var(--c-black);
+  color: var(--c-offwhite);
+
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.pdf-viewer__close:hover {
+  background: var(--c-lime);
+  color: var(--c-black);
+}
+
+/* --- PDF gallery --- */
+/* --- PDF gallery --- */
+.case-study__gallery.pdf-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.case-study__gallery.pdf-gallery .pdf-card {
+  flex: 0 0 220px;
+  width: 220px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.case-study__gallery.pdf-gallery .pdf-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.pdf-gallery .pdf-card {
+  flex: 0 0 220px;
+  width: 220px;
+}
+
+.pdf-gallery .pdf-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 860px) {
+  .case-study__gallery.pdf-gallery {
+    gap: 12px;
+  }
+
+  .case-study__gallery.pdf-gallery .pdf-card {
+    flex-basis: 140px;
+    width: 140px;
+  }
+}

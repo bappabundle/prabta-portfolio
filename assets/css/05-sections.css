@@ -13,7 +13,7 @@
   justify-content: center;
   /* Intentional editorial spacing: give the title more breathing room below the header. */
   padding-top: clamp(120px, 12vh, 168px);
-  padding-bottom: clamp(72px, 8vh, 112px);
+  padding-bottom: clamp(120px, 8vh, 112px);
   position: relative;
   overflow: hidden;
 }
